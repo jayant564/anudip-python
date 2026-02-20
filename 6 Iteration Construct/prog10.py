@@ -1,0 +1,14 @@
+# Check whether a given number is a palindrome using a loop.
+n = int(input("Enter a number: "))
+temp = n
+rev = 0
+
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n = n // 10
+
+if temp == rev:
+    print("Palindrome number")
+else:
+    print("Not a palindrome number")
